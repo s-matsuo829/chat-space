@@ -46,7 +46,7 @@ Things you may want to cover:
 |password|string|null: false|
 
 ### Association
-- has_many :message
+- has_many :messages
 - has_many :groups, through: :users_groups
 - has_many :users_groups
 * * *
