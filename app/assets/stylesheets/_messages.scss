@@ -55,7 +55,6 @@
 }
 
 .chat-main {
-  background-color: #fafafa;
   float: left;
   width: calc(100vw - 300px);
 }
@@ -87,5 +86,18 @@
     position: absolute;
     right: 40px;
     color: #38aef0;
+  }
+}
+
+.messages {
+  height: calc(100vh - 190px);
+  padding: 46px 40px;
+  background-color: #fafafa;
+}
+
+.message {
+  padding-bottom: 40px;
+  &__upper-info {
+    margin-bottom: 10px;
   }
 }
