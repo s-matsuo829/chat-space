@@ -11,16 +11,27 @@
                 %i.fa.fa-edit::before
             %li.side-header__box__menu__edit_user
               %a{ :href => '' }
+                %i.fa.fa-cog::before
       .groups
         .group
           %p.group__group-name sample
           %p.group__latest-messarge Good bye world
+        .group
+          %p.group__group-name sample2
+          %p.group__latest-messarge Good morning world
     .chat-main
       .main-header
         .main-header__left-box
           %h2.main-header__left-box__current-group sample
           %ul.main-header__left-bpx__member-list Member：matsuo sou
+        %a{ :href => '' }
+          .main__header__edit-btn Edit
       .messages
         .message
           .message__upper-info
           %p.message__text Hello World!
+        .message
+          .message__upper-info
+          %p.message__text Bye World!
+        .form
+          %form.new_message#new_message
