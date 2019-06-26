@@ -23,7 +23,7 @@
       .main-header
         .main-header__left-box
           %h2.main-header__left-box__current-group sample
-          %ul.main-header__left-bpx__member-list Member：matsuo sou
+          %ul.main-header__left-box__member-list Member：matsuo sou
         %a{ :href => '' }
           .main__header__edit-btn Edit
       .messages
@@ -34,4 +34,12 @@
           .message__upper-info
           %p.message__text Bye World!
         .form
-          %form.new_message#new_message
+          %form(class="new_message" id="new_message" enctype="multipart/form-data" action="" accept-charset="UTF-8" method="")
+            %input(name="utf8" type="hidden" value="✔︎")
+            %input(type="hidden" name="authenticity_token" value="")
+          .input-box
+            %input(placeholder="type a message" class="input-box__text" type="text" name="message[content]")
+            %label(class="nput-box__image" for="message_image")
+              %i.fa.fa-image::before
+              %input(class="input-box__image__file" type="file" name="message[image]" id="message_image")
+
