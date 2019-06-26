@@ -35,6 +35,14 @@
   }
 }
 
+.fa-edit {
+  color: #ffffff;
+}
+
+.fa-cog {
+  color: #ffffff;
+}
+
 .groups {
   height: calc(100vh - 100px);
   background-color: #2f3e51;
@@ -101,7 +109,7 @@
     margin-bottom: 10px;
     display: flex;
     &__talker {
-      
+    
     }
   }
 }
