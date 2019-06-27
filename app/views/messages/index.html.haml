@@ -3,7 +3,7 @@
     .chat-side
       .side-header
         .side-header__box
-          %p.side-header__box__user-name matsuo
+          %p.side-header__box__user-name matsuo松尾
           %ul.side-header__box__menu
             %li.side-header__box__menu__new-group
               %a{ :href => '' }
@@ -13,37 +13,37 @@
                 %i.fa.fa-cog
       .groups
         .group
-          %p.group__group-name sample
-          %p.group__latest-messarge Good bye world
+          %p.group__group-name sampleサンプル
+          %p.group__latest-messarge Good bye worldバイ
         .group
-          %p.group__group-name sample2
-          %p.group__latest-messarge Good morning world
+          %p.group__group-name sample2サンプル２
+          %p.group__latest-messarge Good morning worldモーニング
     .chat-main
       .main-header
         .main-header__left-box
-          %h2.main-header__left-box__current-group sample
-          %ul.main-header__left-box__member-list Member：matsuo sou
+          %h2.main-header__left-box__current-group sampleサンプル
+          %ul.main-header__left-box__member-list Member：matsuo松尾 souそう
         %a{ :href => '' }
           .main-header__edit-btn Edit
       .messages
         .message
           .message__upper-info
-            %p.message__upper-info__talker matsuo
+            %p.message__upper-info__talker matsuo松尾
             %p.message__upper-info__date 2019/01/01(sun) 00:00:00
-          %p.message__text Hello World!
+          %p.message__text Hello World!ハロー
         .message
           .message__upper-info
-            %p.message__upper-info__talker sou
+            %p.message__upper-info__talker souそう
             %p.message__upper-info__date 2019/01/01(sun) 00:00:01
-          %p.message__text Bye World!
-        .form
-          %form(class="new_message" id="new_message" enctype="multipart/form-data" action="" accept-charset="UTF-8" method="")
-            %input(name="utf8" type="hidden" value="")
-            %input(type="hidden" name="authenticity_token" value="")
-          .input-box
-            %input(placeholder="type a message" class="input-box__text" type="text" name="message[content]")
-            %label(class="nput-box__image" for="message_image")
-              %i.fa.fa-image
-              %input(class="input-box__image__file" type="file" name="message[image]" id="message_image")
-          %input(type="submit" name="commit" value="Send" class="submit-btn" data-disable-with="Send")
+          %p.message__text Bye World!バイ
+      .form
+        %form(class="new_message" id="new_message" enctype="multipart/form-data" action="" accept-charset="UTF-8" method="")
+          %input(name="utf8" type="hidden" value="")
+          %input(type="hidden" name="" value="")
+        .input-box
+          %input(placeholder="type a message" class="input-box__text" type="text" name="")
+          %label(class="input-box__image" for="message_image")
+            %i.fa.fa-image
+            %input(class="input-box__image__file" type="file" name="" id="message_image")
+          %input(type="submit" name="commit" value="Send" class="submit-btn" data-disable-with="")
 
