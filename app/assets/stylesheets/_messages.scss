@@ -1,10 +1,12 @@
+$section-color: #ffffff;
+
 * {
   box-sizing: border-box;
 }
 
 .chat-side {
   width: 300px;
-  color: #ffffff;
+  color: $section-color;
   float: left;
 }
 
@@ -35,11 +37,11 @@
 }
 
 .fa-edit {
-  color: #ffffff;
+  color: $section-color;
 }
 
 .fa-cog {
-  color: #ffffff;
+  color: $section-color;
 }
 
 .groups {
@@ -51,7 +53,7 @@
 
 .group {
   margin-bottom: 40px;
-  color: #ffffff;
+  color: $section-color;
   font-weight: bold;
   &__group-name {
     font-size: 15px;
@@ -171,6 +173,6 @@
   padding: 0 30px;
   margin-left: 15px;
   background-color: #38aef0;
-  color: #ffffff;
+  color: $section-color;
   cursor: pointer;
 }

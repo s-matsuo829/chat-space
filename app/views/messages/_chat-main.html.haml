@@ -1,0 +1,28 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group sampleサンプル
+      %ul.main-header__left-box__member-list Member：matsuo松尾 souそう
+    %a{ :href => '' }
+      .main-header__edit-btn Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker matsuo松尾
+        %p.message__upper-info__date 2019/01/01(sun) 00:00:00
+      %p.message__text ありがとうございます
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker souそう
+        %p.message__upper-info__date 2019/01/01(sun) 00:00:01
+      %p.message__text お疲れ様です
+  .form
+    %form(class="new_message" id="new_message" enctype="multipart/form-data" action="" accept-charset="UTF-8" method="")
+      %input(name="utf8" type="hidden" value="")
+      %input(type="hidden" name="" value="")
+      .input-box
+        %input(placeholder="type a message" class="input-box__text" type="text" name="")
+        %label(class="input-box__image" for="message_image")
+          %i.fa.fa-image
+          %input(class="input-box__image__file" type="file" name="" id="message_image")
+      %input(type="submit" name="commit" value="Send" class="submit-btn" data-disable-with="")
