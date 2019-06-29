@@ -1,69 +1,3 @@
-$section-color: #ffffff;
-
-* {
-  box-sizing: border-box;
-}
-
-.chat-side {
-  width: 300px;
-  color: $section-color;
-  float: left;
-}
-
-.side-header {
-  background-color: #253141;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  &__box {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    font-weight: bold;
-    &__user-name {
-      font-size: 16px;
-    }
-    &__menu {
-      display: flex;
-      &__new-group {
-        margin-left: 0.3rem;
-      }
-      &__edit-user {
-        margin-left: 0.3rem;
-      }
-    }
-  }
-}
-
-.fa-edit {
-  color: $section-color;
-}
-
-.fa-cog {
-  color: $section-color;
-}
-
-.groups {
-  height: calc(100vh - 100px);
-  background-color: #2f3e51;
-  padding: 20px 20px 0;
-  overflow: scroll;
-}
-
-.group {
-  margin-bottom: 40px;
-  color: $section-color;
-  font-weight: bold;
-  &__group-name {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  &__latest-messarge {
-    font-size: 11px;
-  }
-}
-
 .chat-main {
   float: left;
   width: calc(100vw - 300px);
@@ -173,6 +107,6 @@ $section-color: #ffffff;
   padding: 0 30px;
   margin-left: 15px;
   background-color: #38aef0;
-  color: $section-color;
+  color: $white;
   cursor: pointer;
 }

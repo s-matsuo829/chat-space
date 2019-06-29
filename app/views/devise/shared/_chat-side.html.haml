@@ -12,8 +12,9 @@
             %i.fa.fa-cog
   .groups
     .group
-      %p.group__group-name sampleサンプル
-      %p.group__latest-messarge メンター様
-    .group
-      %p.group__group-name sample2サンプル２
-      %p.group__latest-messarge 見てくださり
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .group__group-name
+            = group.name
+          .group__latest-messarge
+            メッセージはまだありません。
