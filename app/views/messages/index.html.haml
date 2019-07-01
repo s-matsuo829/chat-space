@@ -1,6 +1,31 @@
 %body
   .wrapper
     = render partial: 'devise/shared/chat-side'
-    = render partial: 'chat-main'
+    .chat-main
+      .main-header
+        .main-header__left-box
+          %h2.main-header__left-box__current-group sampleサンプル
+          %ul.main-header__left-box__member-list Member：matsuo松尾 souそう
+        = link_to "" do
+          .main-header__edit-btn Edit
+      .messages
+        .message
+          .message__upper-info
+            %p.message__upper-info__talker matsuo松尾
+            %p.message__upper-info__date 2019/01/01(sun) 00:00:00
+          %p.message__text ありがとうございます
+        .message
+          .message__upper-info
+            %p.message__upper-info__talker souそう
+            %p.message__upper-info__date 2019/01/01(sun) 00:00:01
+          %p.message__text お疲れ様です
+      .form
+        = form_for "", html: {class: "new_message"} do |f|
+          .input-box
+            = f.text_field :text, placeholder: "type a message", class: "input-box__text"
+            %label(class="input-box__image" for="message_image")
+              %i.fa.fa-image
+              = f.file_field :image, class: "input-box__image__file", id: "message_image"
+          = f.submit "Send", class: "submit-btn"
 
 
