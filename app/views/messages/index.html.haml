@@ -9,16 +9,7 @@
         = link_to "" do
           .main-header__edit-btn Edit
       .messages
-        .message
-          .message__upper-info
-            %p.message__upper-info__talker matsuo松尾
-            %p.message__upper-info__date 2019/01/01(sun) 00:00:00
-          %p.message__text ありがとうございます
-        .message
-          .message__upper-info
-            %p.message__upper-info__talker souそう
-            %p.message__upper-info__date 2019/01/01(sun) 00:00:01
-          %p.message__text お疲れ様です
+        = render @messages
       .form
         = form_for [@group, @message], html: {class: "new_message"} do |f|
           .input-box
