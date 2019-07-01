@@ -20,9 +20,9 @@
             %p.message__upper-info__date 2019/01/01(sun) 00:00:01
           %p.message__text お疲れ様です
       .form
-        = form_for "", html: {class: "new_message"} do |f|
+        = form_for [@group, @message], html: {class: "new_message"} do |f|
           .input-box
-            = f.text_field :text, placeholder: "type a message", class: "input-box__text"
+            = f.text_field :content, placeholder: "type a message", class: "input-box__text"
             %label(class="input-box__image" for="message_image")
               %i.fa.fa-image
               = f.file_field :image, class: "input-box__image__file", id: "message_image"
