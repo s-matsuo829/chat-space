@@ -59,8 +59,9 @@ $(function(){
       $('.submit-btn').attr('disabled', false);
     })
     .fail(function(){
-      alert('通信エラー');
+      alert('エラー');
     })
+    return false;
   })
 });
 

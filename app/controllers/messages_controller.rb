@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_group
+  before_action :set_group, :set_time
 
   def index
     @message = Message.new
@@ -28,5 +28,15 @@ class MessagesController < ApplicationController
 
   def set_group
     @group = Group.find(params[:group_id])
+  end
+
+  def set_members
+    @members = @group.users
+  end
+
+  def set_time
+    wd = ["Sun", "Mon", "tue", "Wed", "Thu", "Fri", "Sat"]
+    time = Time.now
+    @time = wd[time.wday]
   end
 end
