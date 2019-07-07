@@ -9,9 +9,8 @@
           %ul.main-header__left-box__member-list
             Member：
             %ul.main-header__left-box__member-list__member
-              - if @members.present?
-                - @members.each do |member|
-                  = member.name
+              - @group.users.each do |user|
+                = user.name
         = link_to edit_group_path(@group) do
           .main-header__edit-btn Edit
       .messages
