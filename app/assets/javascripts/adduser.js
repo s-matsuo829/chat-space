@@ -12,3 +12,10 @@ $(function() {
     $("#chat-group-users").append(html);
   });
 });
+
+$(function() {
+  $(document).on('click', '.user-search-remove', function() {
+    $(this).parent().remove();
+  });
+});
+
