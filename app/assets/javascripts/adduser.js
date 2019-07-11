@@ -18,4 +18,3 @@ $(function() {
     $(this).parent().remove();
   });
 });
-
